@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+dist/
+*.egg-info/
+reports/current/
+benchmarks/results/*.json
+!benchmarks/results/.gitkeep

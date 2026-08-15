@@ -1,0 +1,21 @@
+{
+  "verified_at": "2026-08-15",
+  "vllm": {
+    "version": "v0.27.1",
+    "release_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.1"
+  },
+  "models": [
+    {
+      "variant": "fp16",
+      "identifier": "Qwen/Qwen2.5-7B-Instruct",
+      "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+      "license": "apache-2.0"
+    },
+    {
+      "variant": "awq",
+      "identifier": "Qwen/Qwen2.5-7B-Instruct-AWQ",
+      "revision": "b25037543e9394b818fdfca67ab2a00ecc7dd641",
+      "license": "apache-2.0"
+    }
+  ]
+}

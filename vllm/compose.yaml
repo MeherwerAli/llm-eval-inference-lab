@@ -1,0 +1,68 @@
+x-vllm-base: &vllm-base
+  image: vllm/vllm-openai:v0.27.1
+  shm_size: 4gb
+  volumes:
+    - model-cache:/root/.cache/huggingface
+  deploy:
+    resources:
+      reservations:
+        devices:
+          - driver: nvidia
+            count: 1
+            capabilities: [gpu]
+
+services:
+  fp16-cache-off:
+    <<: *vllm-base
+    profiles: [fp16-cache-off]
+    ports: ["127.0.0.1:8001:8000"]
+    command:
+      - --model
+      - Qwen/Qwen2.5-7B-Instruct
+      - --revision
+      - a09a35458c702b33eeacc393d103063234e8bc28
+      - --dtype
+      - half
+      - --no-enable-prefix-caching
+
+  fp16-cache-on:
+    <<: *vllm-base
+    profiles: [fp16-cache-on]
+    ports: ["127.0.0.1:8002:8000"]
+    command:
+      - --model
+      - Qwen/Qwen2.5-7B-Instruct
+      - --revision
+      - a09a35458c702b33eeacc393d103063234e8bc28
+      - --dtype
+      - half
+      - --enable-prefix-caching
+
+  awq-cache-off:
+    <<: *vllm-base
+    profiles: [awq-cache-off]
+    ports: ["127.0.0.1:8003:8000"]
+    command:
+      - --model
+      - Qwen/Qwen2.5-7B-Instruct-AWQ
+      - --revision
+      - b25037543e9394b818fdfca67ab2a00ecc7dd641
+      - --quantization
+      - awq
+      - --no-enable-prefix-caching
+
+  awq-cache-on:
+    <<: *vllm-base
+    profiles: [awq-cache-on]
+    ports: ["127.0.0.1:8004:8000"]
+    command:
+      - --model
+      - Qwen/Qwen2.5-7B-Instruct-AWQ
+      - --revision
+      - b25037543e9394b818fdfca67ab2a00ecc7dd641
+      - --quantization
+      - awq
+      - --enable-prefix-caching
+
+volumes:
+  model-cache:

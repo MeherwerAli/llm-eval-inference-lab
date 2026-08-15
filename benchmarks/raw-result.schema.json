@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Bounded vLLM benchmark raw result",
+  "type": "object",
+  "required": ["environment", "matrix_cell", "repetitions"],
+  "properties": {
+    "environment": {
+      "type": "object",
+      "required": ["gpu", "driver", "cuda", "vllm", "model_identifier", "model_revision", "timestamp"],
+      "properties": {
+        "gpu": {"const": "NVIDIA L4"},
+        "driver": {"type": "string"},
+        "cuda": {"type": "string"},
+        "vllm": {"const": "v0.27.1"},
+        "model_identifier": {"type": "string"},
+        "model_revision": {"type": "string"},
+        "timestamp": {"type": "string", "format": "date-time"}
+      },
+      "additionalProperties": true
+    },
+    "matrix_cell": {
+      "type": "object",
+      "required": ["variant", "prefix_caching", "concurrency", "input_tokens", "output_tokens"],
+      "properties": {
+        "variant": {"enum": ["fp16", "awq"]},
+        "prefix_caching": {"type": "boolean"},
+        "concurrency": {"enum": [1, 4, 8]},
+        "input_tokens": {"enum": [512, 2048]},
+        "output_tokens": {"const": 128}
+      },
+      "additionalProperties": false
+    },
+    "repetitions": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "required": ["time_to_first_token_ms", "latency_ms", "output_tokens_per_second", "failed", "peak_gpu_memory_mib"],
+        "properties": {
+          "time_to_first_token_ms": {"type": ["number", "null"], "minimum": 0},
+          "latency_ms": {"type": ["number", "null"], "minimum": 0},
+          "output_tokens_per_second": {"type": ["number", "null"], "minimum": 0},
+          "failed": {"type": "boolean"},
+          "peak_gpu_memory_mib": {"type": ["number", "null"], "minimum": 0},
+          "error": {"type": ["string", "null"]}
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

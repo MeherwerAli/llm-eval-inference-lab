@@ -1,0 +1,661 @@
+{
+  "metadata": {
+    "dataset_version": "golden-v1.0.0",
+    "code_commit": "uncommitted-worktree",
+    "model_identifier": "deterministic-offline-v1",
+    "environment": "local-deterministic",
+    "timestamp": "2026-08-15T13:51:01.201427Z"
+  },
+  "results": [
+    {
+      "id": "ret-01",
+      "category": "retrieval",
+      "critical": true,
+      "passed": true,
+      "observed": {
+        "top_5": [
+          "retry",
+          "cache"
+        ],
+        "expected": "retry"
+      },
+      "reason": "expected chunk present in top five"
+    },
+    {
+      "id": "ret-02",
+      "category": "retrieval",
+      "critical": true,
+      "passed": true,
+      "observed": {
+        "top_5": [
+          "idempotency",
+          "trace"
+        ],
+        "expected": "idempotency"
+      },
+      "reason": "expected chunk present in top five"
+    },
+    {
+      "id": "ret-03",
+      "category": "retrieval",
+      "critical": true,
+      "passed": true,
+      "observed": {
+        "top_5": [
+          "rate",
+          "budget"
+        ],
+        "expected": "rate"
+      },
+      "reason": "expected chunk present in top five"
+    },
+    {
+      "id": "ret-04",
+      "category": "retrieval",
+      "critical": true,
+      "passed": true,
+      "observed": {
+        "top_5": [
+          "hook",
+          "sse"
+        ],
+        "expected": "hook"
+      },
+      "reason": "expected chunk present in top five"
+    },
+    {
+      "id": "ret-05",
+      "category": "retrieval",
+      "critical": true,
+      "passed": true,
+      "observed": {
+        "top_5": [
+          "ledger",
+          "pdf"
+        ],
+        "expected": "ledger"
+      },
+      "reason": "expected chunk present in top five"
+    },
+    {
+      "id": "ret-06",
+      "category": "retrieval",
+      "critical": true,
+      "passed": true,
+      "observed": {
+        "top_5": [
+          "schema",
+          "metric"
+        ],
+        "expected": "schema"
+      },
+      "reason": "expected chunk present in top five"
+    },
+    {
+      "id": "ret-07",
+      "category": "retrieval",
+      "critical": true,
+      "passed": true,
+      "observed": {
+        "top_5": [
+          "cite",
+          "queue"
+        ],
+        "expected": "cite"
+      },
+      "reason": "expected chunk present in top five"
+    },
+    {
+      "id": "ret-08",
+      "category": "retrieval",
+      "critical": true,
+      "passed": true,
+      "observed": {
+        "top_5": [
+          "hybrid",
+          "auth"
+        ],
+        "expected": "hybrid"
+      },
+      "reason": "expected chunk present in top five"
+    },
+    {
+      "id": "ret-09",
+      "category": "retrieval",
+      "critical": true,
+      "passed": true,
+      "observed": {
+        "top_5": [
+          "approval",
+          "upload"
+        ],
+        "expected": "approval"
+      },
+      "reason": "expected chunk present in top five"
+    },
+    {
+      "id": "ret-10",
+      "category": "retrieval",
+      "critical": true,
+      "passed": true,
+      "observed": {
+        "top_5": [
+          "audit",
+          "cost"
+        ],
+        "expected": "audit"
+      },
+      "reason": "expected chunk present in top five"
+    },
+    {
+      "id": "ret-11",
+      "category": "retrieval",
+      "critical": true,
+      "passed": true,
+      "observed": {
+        "top_5": [
+          "stream",
+          "redact"
+        ],
+        "expected": "stream"
+      },
+      "reason": "expected chunk present in top five"
+    },
+    {
+      "id": "ret-12",
+      "category": "retrieval",
+      "critical": true,
+      "passed": true,
+      "observed": {
+        "top_5": [
+          "timeout",
+          "model"
+        ],
+        "expected": "timeout"
+      },
+      "reason": "expected chunk present in top five"
+    },
+    {
+      "id": "ret-13",
+      "category": "retrieval",
+      "critical": true,
+      "passed": true,
+      "observed": {
+        "top_5": [
+          "pii",
+          "gpu"
+        ],
+        "expected": "pii"
+      },
+      "reason": "expected chunk present in top five"
+    },
+    {
+      "id": "ret-14",
+      "category": "retrieval",
+      "critical": true,
+      "passed": true,
+      "observed": {
+        "top_5": [
+          "dead",
+          "cors"
+        ],
+        "expected": "dead"
+      },
+      "reason": "expected chunk present in top five"
+    },
+    {
+      "id": "ret-15",
+      "category": "retrieval",
+      "critical": true,
+      "passed": true,
+      "observed": {
+        "top_5": [
+          "encrypted",
+          "schema"
+        ],
+        "expected": "encrypted"
+      },
+      "reason": "expected chunk present in top five"
+    },
+    {
+      "id": "cit-01",
+      "category": "citation",
+      "critical": true,
+      "passed": true,
+      "observed": {
+        "abstained": false,
+        "coverage": true,
+        "pages": [
+          1
+        ]
+      },
+      "reason": "citation and abstention contract matched"
+    },
+    {
+      "id": "cit-02",
+      "category": "citation",
+      "critical": true,
+      "passed": true,
+      "observed": {
+        "abstained": false,
+        "coverage": true,
+        "pages": [
+          2
+        ]
+      },
+      "reason": "citation and abstention contract matched"
+    },
+    {
+      "id": "cit-03",
+      "category": "citation",
+      "critical": true,
+      "passed": true,
+      "observed": {
+        "abstained": false,
+        "coverage": true,
+        "pages": [
+          4
+        ]
+      },
+      "reason": "citation and abstention contract matched"
+    },
+    {
+      "id": "cit-04",
+      "category": "citation",
+      "critical": true,
+      "passed": true,
+      "observed": {
+        "abstained": false,
+        "coverage": true,
+        "pages": [
+          8
+        ]
+      },
+      "reason": "citation and abstention contract matched"
+    },
+    {
+      "id": "cit-05",
+      "category": "citation",
+      "critical": true,
+      "passed": true,
+      "observed": {
+        "abstained": false,
+        "coverage": true,
+        "pages": [
+          3
+        ]
+      },
+      "reason": "citation and abstention contract matched"
+    },
+    {
+      "id": "cit-06",
+      "category": "citation",
+      "critical": true,
+      "passed": true,
+      "observed": {
+        "abstained": false,
+        "coverage": true,
+        "pages": [
+          6,
+          7
+        ]
+      },
+      "reason": "citation and abstention contract matched"
+    },
+    {
+      "id": "cit-07",
+      "category": "citation",
+      "critical": true,
+      "passed": true,
+      "observed": {
+        "abstained": false,
+        "coverage": true,
+        "pages": [
+          10
+        ]
+      },
+      "reason": "citation and abstention contract matched"
+    },
+    {
+      "id": "cit-08",
+      "category": "citation",
+      "critical": true,
+      "passed": true,
+      "observed": {
+        "abstained": false,
+        "coverage": true,
+        "pages": [
+          11
+        ]
+      },
+      "reason": "citation and abstention contract matched"
+    },
+    {
+      "id": "cit-09",
+      "category": "citation",
+      "critical": true,
+      "passed": true,
+      "observed": {
+        "abstained": false,
+        "coverage": true,
+        "pages": [
+          9
+        ]
+      },
+      "reason": "citation and abstention contract matched"
+    },
+    {
+      "id": "cit-10",
+      "category": "citation",
+      "critical": true,
+      "passed": true,
+      "observed": {
+        "abstained": false,
+        "coverage": true,
+        "pages": [
+          12
+        ]
+      },
+      "reason": "citation and abstention contract matched"
+    },
+    {
+      "id": "cit-11",
+      "category": "citation",
+      "critical": true,
+      "passed": true,
+      "observed": {
+        "abstained": true,
+        "coverage": true,
+        "pages": []
+      },
+      "reason": "citation and abstention contract matched"
+    },
+    {
+      "id": "cit-12",
+      "category": "citation",
+      "critical": true,
+      "passed": true,
+      "observed": {
+        "abstained": true,
+        "coverage": true,
+        "pages": []
+      },
+      "reason": "citation and abstention contract matched"
+    },
+    {
+      "id": "cit-13",
+      "category": "citation",
+      "critical": true,
+      "passed": true,
+      "observed": {
+        "abstained": true,
+        "coverage": true,
+        "pages": []
+      },
+      "reason": "citation and abstention contract matched"
+    },
+    {
+      "id": "cit-14",
+      "category": "citation",
+      "critical": true,
+      "passed": true,
+      "observed": {
+        "abstained": true,
+        "coverage": true,
+        "pages": []
+      },
+      "reason": "citation and abstention contract matched"
+    },
+    {
+      "id": "cit-15",
+      "category": "citation",
+      "critical": true,
+      "passed": true,
+      "observed": {
+        "abstained": true,
+        "coverage": true,
+        "pages": []
+      },
+      "reason": "citation and abstention contract matched"
+    },
+    {
+      "id": "str-01",
+      "category": "structured",
+      "critical": true,
+      "passed": true,
+      "observed": {
+        "valid_attempt": 1,
+        "repair_attempts": 0
+      },
+      "reason": "valid within two repairs"
+    },
+    {
+      "id": "str-02",
+      "category": "structured",
+      "critical": true,
+      "passed": true,
+      "observed": {
+        "valid_attempt": 2,
+        "repair_attempts": 1
+      },
+      "reason": "valid within two repairs"
+    },
+    {
+      "id": "str-03",
+      "category": "structured",
+      "critical": true,
+      "passed": true,
+      "observed": {
+        "valid_attempt": 2,
+        "repair_attempts": 1
+      },
+      "reason": "valid within two repairs"
+    },
+    {
+      "id": "str-04",
+      "category": "structured",
+      "critical": true,
+      "passed": true,
+      "observed": {
+        "valid_attempt": 3,
+        "repair_attempts": 2
+      },
+      "reason": "valid within two repairs"
+    },
+    {
+      "id": "str-05",
+      "category": "structured",
+      "critical": true,
+      "passed": true,
+      "observed": {
+        "valid_attempt": 1,
+        "repair_attempts": 0
+      },
+      "reason": "valid within two repairs"
+    },
+    {
+      "id": "str-06",
+      "category": "structured",
+      "critical": true,
+      "passed": true,
+      "observed": {
+        "valid_attempt": 2,
+        "repair_attempts": 1
+      },
+      "reason": "valid within two repairs"
+    },
+    {
+      "id": "str-07",
+      "category": "structured",
+      "critical": true,
+      "passed": true,
+      "observed": {
+        "valid_attempt": 3,
+        "repair_attempts": 2
+      },
+      "reason": "valid within two repairs"
+    },
+    {
+      "id": "str-08",
+      "category": "structured",
+      "critical": true,
+      "passed": true,
+      "observed": {
+        "valid_attempt": 1,
+        "repair_attempts": 0
+      },
+      "reason": "valid within two repairs"
+    },
+    {
+      "id": "str-09",
+      "category": "structured",
+      "critical": true,
+      "passed": true,
+      "observed": {
+        "valid_attempt": 2,
+        "repair_attempts": 1
+      },
+      "reason": "valid within two repairs"
+    },
+    {
+      "id": "str-10",
+      "category": "structured",
+      "critical": true,
+      "passed": true,
+      "observed": {
+        "valid_attempt": 1,
+        "repair_attempts": 0
+      },
+      "reason": "valid within two repairs"
+    },
+    {
+      "id": "pol-01",
+      "category": "policy",
+      "critical": true,
+      "passed": true,
+      "observed": {
+        "disposition": "allow",
+        "executed": true
+      },
+      "reason": "policy disposition matched"
+    },
+    {
+      "id": "pol-02",
+      "category": "policy",
+      "critical": true,
+      "passed": true,
+      "observed": {
+        "disposition": "redact",
+        "executed": true
+      },
+      "reason": "policy disposition matched"
+    },
+    {
+      "id": "pol-03",
+      "category": "policy",
+      "critical": true,
+      "passed": true,
+      "observed": {
+        "disposition": "redact",
+        "executed": true
+      },
+      "reason": "policy disposition matched"
+    },
+    {
+      "id": "pol-04",
+      "category": "policy",
+      "critical": true,
+      "passed": true,
+      "observed": {
+        "disposition": "review",
+        "executed": false
+      },
+      "reason": "policy disposition matched"
+    },
+    {
+      "id": "pol-05",
+      "category": "policy",
+      "critical": true,
+      "passed": true,
+      "observed": {
+        "disposition": "review",
+        "executed": false
+      },
+      "reason": "policy disposition matched"
+    },
+    {
+      "id": "pol-06",
+      "category": "policy",
+      "critical": true,
+      "passed": true,
+      "observed": {
+        "disposition": "approval_required",
+        "executed": false
+      },
+      "reason": "policy disposition matched"
+    },
+    {
+      "id": "pol-07",
+      "category": "policy",
+      "critical": true,
+      "passed": true,
+      "observed": {
+        "disposition": "allow",
+        "executed": true
+      },
+      "reason": "policy disposition matched"
+    },
+    {
+      "id": "pol-08",
+      "category": "policy",
+      "critical": true,
+      "passed": true,
+      "observed": {
+        "disposition": "approval_required",
+        "executed": false
+      },
+      "reason": "policy disposition matched"
+    },
+    {
+      "id": "pol-09",
+      "category": "policy",
+      "critical": true,
+      "passed": true,
+      "observed": {
+        "disposition": "approval_required",
+        "executed": false
+      },
+      "reason": "policy disposition matched"
+    },
+    {
+      "id": "pol-10",
+      "category": "policy",
+      "critical": true,
+      "passed": true,
+      "observed": {
+        "disposition": "allow",
+        "executed": true
+      },
+      "reason": "policy disposition matched"
+    }
+  ],
+  "metrics": {
+    "total": 50,
+    "passed": 50,
+    "retrieval_hit_at_5": 1.0,
+    "citation_correct": 1.0,
+    "citation_coverage": 1.0,
+    "structured_valid": 1.0,
+    "policy_correct": 1.0,
+    "unauthorized_actions": 0
+  },
+  "gates": {
+    "retrieval_hit_at_5": true,
+    "citation_correctness": true,
+    "citation_coverage": true,
+    "structured_within_two_repairs": true,
+    "policy_disposition": true,
+    "zero_unauthorized_actions": true,
+    "zero_critical_regressions": true
+  }
+}
